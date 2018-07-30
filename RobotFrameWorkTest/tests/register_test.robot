@@ -45,31 +45,3 @@ Create New Register Test
 
 
 
-
-
-
-#Create Register Test
-  #  ${dict}  Get Dict Of Register Data
-  #   ${dict}  Get Dict
-  #   Log To Console  ${dict}
-  #   Log to console  myFirstanme
-  #  Log to console  ${dict['register'][0]['firstName']}
-  #   :FOR    ${INDEX}    IN RANGE    0    1
-  #  \   Log to console  ${INDEX}
-  #   \   Log to console  ${dict['register'][${INDEX}]['firstName']}
-
-  #  :FOR    ${ELEMENT}    IN    ${dict['register']}
-  #   \   Log to console  ${ELEMENT}
-  #  \   Log to console  ${ELEMENT['firstName']}"""
-
-
-#Example Json
-  #    ${json}  Get Binary File  ${json_path}RegisterData.json
-  #    Log to console  ${json}
-      #Log to console  ${value}
-
-
-#*** Keywords ***
-#Load Json With Path File
- #   ${result}=  Load Json From File	 ../resources/RegisterData.json
-  #  [Return]   ${result}
